@@ -2,14 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="devchallenges.png" />
-
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -57,11 +51,17 @@
               bath.
             </p>
           </div>
-          <img src="assets/photo1.webp" alt="Cheesecake" />
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="assets/photo1-mobile.webp"
+            />
+            <source media="(min-width: 768px)" srcset="assets/photo1.webp" />
+            <img src="assets/photo1.webp" alt="Cheesecake" />
+          </picture>
         </header>
         <section class="recipe__content">
-          <h3>Ingredients</h3>
-          <!-- TODO: add Checkboxes -->
+          <h2 class="ingredients__title">Ingredients</h2>
           <form class="checkbox__list">
             <p class="ingredients__subtitle">Graham Cracker Crust</p>
             <ul>
@@ -334,7 +334,6 @@
             </ul>
           </form>
           <h2 class="instructions">Instructions</h2>
-          <!-- TODO: add text -->
           <ol class="instructions__list">
             <li>
               Adjust the oven rack to the lower-middle position and preheat oven
