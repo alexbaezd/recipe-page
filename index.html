@@ -18,11 +18,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+    /></noscript>
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined&display=swap"
       rel="stylesheet"
     />
     <link
@@ -50,8 +57,7 @@
               bath.
             </p>
           </div>
-
-          <img src="assets/photo1.png" alt="Cheesecake" />
+          <img src="assets/photo1.webp" alt="Cheesecake" />
         </header>
         <section class="recipe__content">
           <h3>Ingredients</h3>
